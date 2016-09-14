@@ -26,7 +26,7 @@ def bananaReminder():
 
 			server = smtplib.SMTP('smtp.gmail.com', 587)
 			server.starttls()
-			server.login(fromaddr, "JKBindia555!")
+			server.login(fromaddr, "PASSWORD")
 			text = msg.as_string()
 			server.sendmail(fromaddr, toaddr, text)
 			server.quit()
